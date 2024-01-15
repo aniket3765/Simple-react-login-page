@@ -56,7 +56,7 @@ const Login = (props) => {
    setFormIsValid (event.target.value.trim().length > 0 && emailState.value.includes('@') && passwordState.value.trim().length > 6)    
   }
 
-  const validateEmailHandler = () => dispatchEmail({type: 'INPUT_BLUR'} )
+  const validateEmailHandler = () => dispatchEmail({type: 'INPUT_BLUR'})
 
   const validatePasswordHandler = () => dispatchPassword({type:"INPUT_BLUR"});
 
