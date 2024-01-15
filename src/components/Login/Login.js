@@ -77,7 +77,7 @@ const Login = (props) => {
    else  if(!passwordState.isValid){ 
       passwordInputRef.current.focus();
     }
-    else if(!collegeState) collegeInputRef.current.focus();
+    else if(!collegeState.isValid) collegeInputRef.current.focus();
   };
 
   return (
